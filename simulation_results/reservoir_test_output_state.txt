@@ -1,0 +1,32 @@
+00:00:00:000
+State for model flow_in_input_reader is next time: 00:00:00:000
+State for model flow_out_input_reader is next time: 00:00:00:000
+State for model reservoir1 is volume: 1000 & level: 1
+00:00:00:000
+State for model flow_in_input_reader is next time: 00:00:10:000
+State for model flow_out_input_reader is next time: 00:00:10:000
+State for model reservoir1 is volume: 1000 & level: 1
+00:00:10:000
+State for model flow_in_input_reader is next time: 00:00:30:000
+State for model flow_out_input_reader is next time: 00:00:30:000
+State for model reservoir1 is volume: 1100 & level: 1.1
+00:00:13:000
+State for model flow_in_input_reader is next time: 00:00:30:000
+State for model flow_out_input_reader is next time: 00:00:30:000
+State for model reservoir1 is volume: 1100 & level: 1.1
+00:00:40:000
+State for model flow_in_input_reader is next time: 00:00:30:000
+State for model flow_out_input_reader is next time: 00:00:30:000
+State for model reservoir1 is volume: 1450 & level: 1.45
+00:00:43:000
+State for model flow_in_input_reader is next time: 00:00:30:000
+State for model flow_out_input_reader is next time: 00:00:30:000
+State for model reservoir1 is volume: 1450 & level: 1.45
+00:01:10:000
+State for model flow_in_input_reader is next time: inf
+State for model flow_out_input_reader is next time: inf
+State for model reservoir1 is volume: 1670 & level: 1.67
+00:01:13:000
+State for model flow_in_input_reader is next time: inf
+State for model flow_out_input_reader is next time: inf
+State for model reservoir1 is volume: 1670 & level: 1.67

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Models>
+	<Model name="City Water Supply System" type="Cadmium DEVS Coupled" description="A DEVS model for the City Water Supply system made up of a reservoir, supply pumps, and city pumps">
+		<Inputs>
+		</Inputs>
+		<Outputs>
+			<Port name="level" type="float" description="The level of the reservoir"/>
+		</Outputs>
+		<Files>
+			<File name="main" type="cpp" location="./top_model/"/>
+		</Files>
+	</Model>
+	<Model name="Reservoir" type="Cadmium DEVS Atomic" description="The atomic model of the reservoir (water tank)">
+		<Inputs>
+			<Port name="flow_out" type="float" description="The volume leaving the reservoir"/>
+			<Port name="flow_in" type="float" description="The volume entering the reservoir"/>
+		</Inputs>
+		<Outputs>
+			<Port name="level" type="float" description="The level of the reservoir"/>
+		</Outputs>
+		<Files>
+			<File name="reservoir" type="hpp" location="./atomics/"/>
+		</Files>
+	</Model>
+	<Model name="WaterSupply" type="Cadmium DEVS Atomic" description="The atomic model of the water supply pump">
+		<Inputs>
+			<Port name="start" type="int" description="Signal to start/stop pumps"/>
+			<Port name="level" type="float" description="The level of the reservoir"/>
+		</Inputs>
+		<Outputs>
+			<Port name="flow" type="float" description="The volume leaving supply"/>
+		</Outputs>
+		<Files>
+			<File name="water_supply_pump" type="hpp" location="./atomics/"/>
+		</Files>
+	</Model>
+	<Model name="CityPump" type="Cadmium DEVS Atomic" description="The atomic model of the pumps to the city">
+		<Inputs>
+			<Port name="start" type="int" description="Signal to start/stop pumps"/>
+			<Port name="level" type="float" description="The level of the reservoir"/>
+		</Inputs>
+		<Outputs>
+			<Port name="flow" type="float" description="The volume leaving the reservoir for city"/>
+		</Outputs>
+		<Files>
+			<File name="city_pump" type="hpp" location="./atomics/"/>
+		</Files>
+	</Model>
+</Models>
